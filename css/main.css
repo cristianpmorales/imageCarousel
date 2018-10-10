@@ -1,0 +1,58 @@
+.clearfix {
+  overflow: auto;
+}
+
+body{ background: #2b2bbb; }
+
+img{
+  display: flex;
+  margin-left: 30%;
+  margin-right: 25%;
+  margin-top: 100px;
+}
+
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrowLeft {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+#arrowRight {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+@media screen and (max-width:899px){
+  img {
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    .arrow{
+    margin-top: 250px;
+    }
+    #arrowLeft {
+    border-width: 25px 35px 25px 0;
+    left: 0;
+    margin-left: 100px;
+    }
+    #arrowRight {
+    border-width: 25px 0 25px 30px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 100px;
+}
+
+}
